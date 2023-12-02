@@ -6,16 +6,16 @@ def set_number(text):
     if games[0] == '':
         games.pop(0)
 
-    games_lst = []
+    games_list = []
     for game in games:
         game_parts = [part.strip().split(", ") for part in game.split(";")]
-        games_lst.append(game_parts)
-    return games_lst
+        games_list.append(game_parts)
+    return games_list
 
 
 with open("input.txt", "r") as file:
     data = file.read()
-    lst = set_number(data)
+    games_list = set_number(data)
     
     possible_games_sum = 0
 

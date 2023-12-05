@@ -25,7 +25,7 @@ def words_to_numbers(s):
 
 
 total_sum = 0 
-with open("puzzle-input.txt", "r") as file:
+with open("input.txt", "r") as file:
     for line in file:
         new_string = words_to_numbers(line)
         number = "".join(char for char in new_string if char.isdigit())

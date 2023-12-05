@@ -1,5 +1,5 @@
 total_sum = 0 
-with open("puzzle.input.txt", "r") as file:
+with open("input.txt", "r") as file:
     for line in file:
         number = "".join(char for char in line if char.isdigit())
         if number:
